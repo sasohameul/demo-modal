@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  src: url(./styles/fonts/Lato-Black.ttf)format('ttf');
+}
+
+body {
+
+  background-color: #fdf3df;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: 'Lato';
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  
+}
+
+#back {
+
+    width: 785px;
+    background-color: #536F01;
+    height: 610px;
+    z-index: -1;
+    position: absolute;
+    border-radius: 50%;
+    right: 0;
+    margin: 0px auto;
+    left: 0;
+    bottom: 123px;
+}
+
+.write-review {
+
+  all: unset;
+  background-color: #ffbe00;
+  border-radius: 27px;
+  padding: 21px;
+  color: white;
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+  border: 2px solid white;
+
+}
+
+
+
+.review-card {
+
+  position: relative;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 50px;
+  background-color: white;
+  border-radius: 20px;
+  
+}
+
+#card-title {
+  margin-bottom: 10px;
+}
+
+.title {
+
+  display: flex;
+  flex-direction: column;
+
+}
+#rate-instruc {
+  all: unset;
+  
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+label {
+
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  
+}
+
+
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 6px;
+
+}
+
+
+.rating .star-image {
+
+  width: 44px;
+  height: 44px;
+  border: 2px solid rgba(172, 192, 197, 0.43);
+  border-radius: 4px;
+  display: block;
+  padding: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#rate-instruc {
+
+  font-size: 14px;
+}
+
+.review-desc {
+
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-info {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.checkbox-button {
+  margin-bottom: 18px;
+  position: relative;
+  display: flex;
+}
+/* yes radiobox*/
+#yes {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+}
+
+#yes strong {
+  margin-left: 3px;
+}
+input[id="recommend"] {
+  display: none;
+}
+
+input[id="recommend"] + label[id="yes"]::before {
+
+  content: '';
+  display: inline-block;
+  background: url(./assets/empty-radio-button.png) no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+input[id="recommend"]:checked + label[id="yes"]::before{
+
+  background: url(./assets/radio-button.png) no-repeat;
+  background-size: cover;
+}
+
+/* no radiobox */
+#no {
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 15px;
+}
+
+#no strong {
+  margin-left: 3px;
+}
+
+input[id="not-recommend"] {
+  display: none;
+}
+
+input[id="not-recommend"] + label[id="no"]::before {
+
+  content: '';
+  display: inline-block;
+  background: url(./assets/empty-radio-button.png) no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+input[id="not-recommend"]:checked + label[id="no"]::before{
+
+  background: url(./assets/radio-button.png) no-repeat;
+  background-size: cover;
+}
+
+
+/* accept terms*/
+#accept {
+  margin-right: 10px;
+  display: none;
+  
+}
+
+.checkbox-button label {
+  
+  cursor: pointer;
+  position: relative;
+  right: -25px;
+  
+}
+
+.checkbox-button label::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -24px;
+  top: -2px;
+  width: 20px;
+  height: 20px;
+  background: url(./assets/empty-radio-button.png) no-repeat;
+  background-size: cover;
+}
+
+#accept:checked + label::before {
+  background: url(./assets/radio-button.png) no-repeat;
+  background-size: cover;
+}
+
+#terms-desc {
+  font-size: 14px;
+}
+
+.review-contents {
+ 
+  width: 185px;
+  height: 35px;
+  border: 2px solid rgba(172, 192, 197, 0.43);
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0 20px 20px 0;
+  
+
+}
+
+.review-contents.review-text {
+  width: 400px;
+}
+
+
+.option-recommend {
+  margin-bottom: 20px;
+}
+
+
+textarea {
+  margin-bottom: 20px;
+  resize: none;
+  border: 2px solid rgba(172, 192, 197, 0.43);;
+  border-radius: 4px;
+  padding: 10px;
+  font-family:"Apple SD Gothic Neo" ;
+}
+
+.underline {
+
+  text-decoration: underline;
+}
+
+.submit-button {
+  all: unset;
+  cursor: pointer;
+  background-color: #536F01;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+
+}
+
+.exit {
+  all: unset;
+  cursor: pointer;
+  position: absolute;
+  top: 31px;
+  right: 38px;
+}
+
+.exit img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(240, 240, 240, 0.49);
+  border-radius: 50%;
+  padding: 10px;
+  
+}

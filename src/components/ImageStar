@@ -1,0 +1,45 @@
+
+// const ImageStar = () => {
+
+
+//   return (
+
+//     <>
+//     <img
+//                 src={empty_star}
+//                 alt="full_star"
+//                 className="star-image"
+//                 id="1"
+//               />
+//               <img
+//                 src={empty_star}
+//                 alt="full_star"
+//                 className="star-image"
+//                 id="2"
+//               />
+//               <img
+//                 src={empty_star}
+//                 alt="full_star"
+//                 className="star-image"
+//                 id="3"
+//               />
+//               <img
+//                 src={empty_star}
+//                 alt="full_star"
+//                 className="star-image"
+//                 id="4"
+//               />
+//               <img
+//                 src={empty_star}
+//                 alt="empty_star"
+//                 className="star-image"
+//                 id="5"
+//               />
+//               </>
+
+
+//   )
+
+// }
+
+// export default ImageStar;
