@@ -72,25 +72,14 @@ body {
   margin-bottom: 10px;
 }
 
-.title {
 
-  display: flex;
-  flex-direction: column;
-
-}
-#rate-instruc {
-  all: unset;
-  
-  margin-bottom: 20px;
-  font-size: 16px;
-}
 
 p {
   margin-bottom: 20px;
   font-size: 16px;
 }
 
-label {
+/* label {
 
   font-size: 14px;
   font-weight: 700;
@@ -98,66 +87,39 @@ label {
   display: inline-block;
   margin-right: 5px;
   
-}
+} */
 
-
-
-.rating {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 6px;
-
-}
-
-
-.rating .star-image {
-
-  width: 44px;
-  height: 44px;
-  border: 2px solid rgba(172, 192, 197, 0.43);
-  border-radius: 4px;
-  display: block;
-  padding: 4px;
-  margin-right: 8px;
-  cursor: pointer;
-}
-
-#rate-instruc {
-
-  font-size: 14px;
-}
-
-.review-desc {
+/* .review-desc {
 
   display: flex;
   flex-direction: column;
-}
-
+} */
+/* 
 .reviewer-info {
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   
-}
+} */
 
-.checkbox-button {
+/* .checkbox-button {
   margin-bottom: 18px;
   position: relative;
   display: flex;
-}
+} */
 /* yes radiobox*/
-#yes {
+/* #yes {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 15px;
-}
+} */
 
-#yes strong {
+/* #yes strong {
   margin-left: 3px;
-}
-input[id="recommend"] {
+} */
+/* input[id="recommend"] {
   display: none;
 }
 
@@ -176,19 +138,19 @@ input[id="recommend"]:checked + label[id="yes"]::before{
 
   background: url(./assets/radio-button.png) no-repeat;
   background-size: cover;
-}
+} */
 
 /* no radiobox */
-#no {
+/* #no {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 15px;
 }
 
-#no strong {
+/* #no strong {
   margin-left: 3px;
-}
+} */
 
 input[id="not-recommend"] {
   display: none;
@@ -210,24 +172,24 @@ input[id="not-recommend"]:checked + label[id="no"]::before{
   background: url(./assets/radio-button.png) no-repeat;
   background-size: cover;
 }
-
+ */
 
 /* accept terms*/
-#accept {
+/* #accept {
   margin-right: 10px;
   display: none;
   
-}
+} */
 
-.checkbox-button label {
+/* .checkbox-button label {
   
   cursor: pointer;
   position: relative;
   right: -25px;
   
-}
+} */
 
-.checkbox-button label::before {
+/* .checkbox-button label::before {
   content: '';
   display: block;
   position: absolute;
@@ -237,18 +199,18 @@ input[id="not-recommend"]:checked + label[id="no"]::before{
   height: 20px;
   background: url(./assets/empty-radio-button.png) no-repeat;
   background-size: cover;
-}
+} */
 
-#accept:checked + label::before {
+/* #accept:checked + label::before {
   background: url(./assets/radio-button.png) no-repeat;
   background-size: cover;
-}
+} */
 
 #terms-desc {
   font-size: 14px;
 }
 
-.review-contents {
+/* .review-contents {
  
   width: 185px;
   height: 35px;
@@ -258,31 +220,27 @@ input[id="not-recommend"]:checked + label[id="no"]::before{
   margin: 0 20px 20px 0;
   
 
-}
-
-.review-contents.review-text {
-  width: 400px;
-}
+} */
 
 
-.option-recommend {
-  margin-bottom: 20px;
-}
+/* .option-recommend { */
+  /* margin-bottom: 20px;
+} */
 
 
-textarea {
+/* textarea {
   margin-bottom: 20px;
   resize: none;
   border: 2px solid rgba(172, 192, 197, 0.43);;
   border-radius: 4px;
   padding: 10px;
-  font-family:"Apple SD Gothic Neo" ;
-}
+  
+} */
 
-.underline {
+/* .underline {
 
   text-decoration: underline;
-}
+} */
 
 .submit-button {
   all: unset;
